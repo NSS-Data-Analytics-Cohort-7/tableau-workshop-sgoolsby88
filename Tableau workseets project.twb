@@ -1,0 +1,3033 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0812.0353                               -->
+<workbook original-version='18.1' source-build='2022.2.1 (20222.22.0812.0353)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='VGSalesproject' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='vgsales' inline='true' name='federated.1raiyh20kc2qcy11u4fid0c7mccx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vgsales' name='textscan.1fjo1qz0ywzm9l1dpojxz1k2l8hh'>
+            <connection class='textscan' directory='C:/Users/sgool/Desktop' filename='vgsales.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fjo1qz0ywzm9l1dpojxz1k2l8hh' name='vgsales.csv' table='[vgsales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fjo1qz0ywzm9l1dpojxz1k2l8hh' name='vgsales.csv' table='[vgsales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Platform]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Platform</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NA_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NA_Sales]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>NA_Sales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EU_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EU_Sales]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>EU_Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JP_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JP_Sales]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>JP_Sales</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_Sales]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Other_Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Global_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Global_Sales]</local-name>
+            <parent-name>[vgsales.csv]</parent-name>
+            <remote-alias>Global_Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+      <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+      <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
+      <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
+      <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='vgsales.csv' datatype='table' name='[__tableau_internal_object_id__].[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]' role='measure' type='quantitative' />
+      <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/sgool/Desktop/DA-7/Projects/tableau-workshop-sgoolsby88/vgsales workseets.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2022 02:22:26 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='vgsales' increment-value='%null%' refresh-type='create' rows-inserted='16598' timestamp-start='2022-09-16 02:22:26.233' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16598</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7054</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Platform</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Platform</remote-alias>
+              <ordinal>2</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>4</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publisher</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Publisher]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publisher</remote-alias>
+              <ordinal>5</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>440</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NA_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NA_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NA_Sales</remote-alias>
+              <ordinal>6</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>349</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EU_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EU_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EU_Sales</remote-alias>
+              <ordinal>7</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JP_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[JP_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JP_Sales</remote-alias>
+              <ordinal>8</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other_Sales</remote-alias>
+              <ordinal>9</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Global_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Global_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Global_Sales</remote-alias>
+              <ordinal>10</ordinal>
+              <family>vgsales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>487</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vgsales.csv_F9E9C87719CB4609A0DB957C641580E3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Publisher:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;505 Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Alvion&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Asmik Ace Entertainment&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;bitComposer Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cloud Imperium Games Corporation&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;CyberFront&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DreamCatcher Interactive&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Epic Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;From Software&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Gathering of Developers&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GT Interactive&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Human Entertainment&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Interchannel-Holon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kadokawa Shoten&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lexicon Entertainment&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mattel Interactive&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Midas Interactive Entertainment&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Myelin Media&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nintendo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P2 Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Playlogic Game Factory&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rain Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SCi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sony Online Entertainment&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sweets&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Telltale Games&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tryfirst&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Victor Interactive&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;XS Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1C Company&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aerosoft&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aruze Corp&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BAM! Entertainment&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BushiRoad&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CPG Products&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Destineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Elf&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Flashpoint Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Game Arts&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gotham Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hect&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Imageworks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jack of All Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kokopeli Digital Studios&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mamba Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mercury Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mojang&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Neko Entertainment&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;O-Games&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Phantagram&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Princess Soft&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Riverhillsoft&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SNK Playmore&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TalonSoft&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tommo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Warp&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;7G//AMES&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alawar Entertainment&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ASCII Entertainment&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bethesda Softworks&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CCP&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Crystal Dynamics&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DigiCube&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Enix Corporation&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;fonfun&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gamecock&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gremlin Interactive Ltd&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;HMH Interactive&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Indie Games&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JoWood Productions&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Laguna&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Marvelous Interactive&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Micro Cabin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MTV Games&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NewKidCo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ongakukan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Piacci&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Quest&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Russel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sony Computer Entertainment&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Summitsoft&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Technos Japan Corporation&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tradewest&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Valve Software&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wizard Video Games&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Acclaim Entertainment&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AQ Interactive&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Asylum Entertainment&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Blue Byte&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;CokeM Interactive&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Daedalic Entertainment&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dusenberry Martin Racing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Essential Games&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;FunSoft&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ghostlight&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;HAL Laboratory&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Idea Factory&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Interworks Unlimited, Inc.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kando Games&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Little Orbit&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MC2 Entertainment&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Milestone S.r.l.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Natsume&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Nippon Telenet&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Palcom&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Plenty&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Red Orb&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sega&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Square&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;System 3 Arcade Software&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Adventure Company&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ubisoft&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Virgin Interactive&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Yeti&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;989 Sports&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;American Softworks&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Asmik Corp&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Black Bean Games&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Coconuts Japan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cygames&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DreamWorks Interactive&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Epoch&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fuji&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;General Entertainment&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GungHo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HuneX&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Intergrow&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kaga Create&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Licensed 4U&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Max Five&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Midway Games&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mystique&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nippon Amuse&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pacific Century Cyber Works&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Playmates&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rebellion&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Screenlife&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SouthPeak Games&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Swing! Entertainment&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Telstar&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TYO&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Video System&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Xseed Games&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;10TACLE Studios&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alchemist&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ASCII Media Works&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Big Ben Interactive&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CDV Software Entertainment&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CTO SpA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Disney Interactive Studios&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Enjoy Gaming ltd.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Foreign Media Games&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gameloft&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Griffin International&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Home Entertainment Suppliers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Infogrames&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Just Flight&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Legacy Interactive&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Masque Publishing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Microids&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mud Duck Productions&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nexon&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Origin Systems&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pinnacle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Quinrose&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sammy Corporation&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sony Computer Entertainment America&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sunflowers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;TechnoSoft&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Trion Worlds&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vap&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Xicat Interactive&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Activision Value&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Arika&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Avanquest Software&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Brash Entertainment&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Conspiracy Entertainment&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Deep Silver&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Electronic Arts&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Falcom Corporation&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gainax Network Systems&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;GN Software&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Headup Games&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Image Epoch&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ivolgamus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Knowledge Adventure&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Magix&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Men-A-Vision&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;mixi, Inc&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NEC&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Number None&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Parker Bros.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pow&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Revolution Software&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Slitherine Software&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Starfish&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Take-Two Interactive&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tivola&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Universal Gamex&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wargaming.net&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Zushi Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2D Boy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Agatsuma Entertainment&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ASC Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Banpresto&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Capcom&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Crave Entertainment&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Detn8 Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Elite&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Flight-Plan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Game Factory&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Graffiti&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hello Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Imagic&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jaleco&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Konami Digital Entertainment&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Marvel Entertainment&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Merscom LLC&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Monte Christo Multimedia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NetRevo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ocean&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Phantom EFX&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Prototype&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rocket Company&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Societa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Storm City Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TDK Core&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tomy Corporation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Valcon Games&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;WayForward Technologies&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Activision&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Arena Entertainment&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Avalon Interactive&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Boost On&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Compile&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data East&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Edia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Experience Inc.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;G.Rev&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Global A Entertainment&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hasbro Interactive&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Illusion Softworks&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Irem Software Engineering&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kids Station&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mad Catz&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Media Works&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Misawa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NCSoft&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nordic Games&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Paradox Development&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Popcorn Arcade&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;responDESIGN&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Simon &amp; Schuster Interactive&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SSI&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Takara&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Time Warner Interactive&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;UIG Entertainment&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wanadoo&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zoo Digital Publishing&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;20th Century Fox Video Games&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alternative Software&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Asgard&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Big Fish Games&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ChunSoft&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Culture Brain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dorart&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Enterbrain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fortyfive&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GameMill Entertainment&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Groove Games&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hudson Entertainment&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Insomniac Games&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JVC&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;LEGO Media&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mastertronic&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Microprose&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mumbo Jumbo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nichibutsu&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Otomate&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Pioneer LDC&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Quintet&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Saurus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sony Computer Entertainment Europe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sunrise Interactive&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tecmo Koei&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tripwire Interactive&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vatical Entertainment&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Xing Entertainment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Accolade&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Aqua Plus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Atari&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BMG Interactive Entertainment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Coleco&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Daito&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;EA Games&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Evolution Games&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Funsta&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Giga&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hamster Corporation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Idea Factory International&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Inti Creates&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Karin Entertainment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Locus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Media Entertainment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Minato Station&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Navarre Corp&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nitroplus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Panther Software&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PM Studios&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Red Storm Entertainment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Seta Corporation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Square EA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;System Soft&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Learning Company&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ubisoft Annecy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Virtual Play Games&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Yuke&apos;s&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ackkstudios&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Aques&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Athena&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bohemia Interactive&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Comfort&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Data Age&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Easy Interactive&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Evolved Games&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;FuRyu&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Giza10&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Happinet&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;IE Institute&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Introversion Software&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kemco&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LSP Games&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Media Factory&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mindscape&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Naxat Soft&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nobilis&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Paon&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pony Canyon&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RedOctane&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Seventh Chord&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Square Enix&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;T&amp;E Soft&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;THQ&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;UEP Systems&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Visco&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Yumedia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Activision Blizzard&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Aria&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Avanquest&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BPS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Compile Heart&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Datam Polystar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Eidos Interactive&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Extreme Entertainment Group&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gaga&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Global Star&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Havas Interactive&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Imadio&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ITT Family Games&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;King Records&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Magical Company&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MediaQuest&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mitsui&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NDA Productions&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NovaLogic&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Paradox Interactive&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PopTop Software&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Revolution (Japan)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Slightly Mad Studios&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Stainless Games&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Takara Tomy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Titus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ultravision&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Warashi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zoo Games&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Adeline Software&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;ArtDink&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Axela&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Broccoli&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Core Design Ltd.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Destination Software, Inc&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Electronic Arts Victor&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fields&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gakken&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;GOA&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hearty Robin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;imageepoch Inc.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;iWin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Koch Media&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Majesco Entertainment&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mentor Interactive&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MLB.com&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NEC Interchannel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;O3 Entertainment&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Performance Designed Products&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PQube&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rising Star Games&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SNK&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Starpath Corp.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Takuyo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;TOHO&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Universal Interactive&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Warner Bros. Interactive Entertainment&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;989 Studios&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Angel Studios&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Aspyr&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Black Label Games&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Codemasters&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D3Publisher&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DSI Games&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ertain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Funbox Media&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Genki&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gust&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Iceberg Interactive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Interplay&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kalypso Media&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lighthouse Interactive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Maximum Family Games&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Milestone&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nippon Columbia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pack In Soft&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Playmore&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rebellion Developments&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SCS Software&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Spike&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Syscom&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tetris Online&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Type-Moon&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Views&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yacht Club Games&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;49Games&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Altron&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;ASK&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bigben Interactive&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;City Interactive&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Culture Publishers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;dramatic create&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;EON Digital Entertainment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Fox Interactive&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GameTek&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GSP&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hudson Soft&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Interchannel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kadokawa Games&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Level 5&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mastiff&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Microsoft Game Studios&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mycom&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nihon Falcom Corporation&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Oxygen Interactive&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Play It&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rage Software&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Scholastic Inc.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sony Music Entertainment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sunsoft&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Telegames&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tru Blu Entertainment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vic Tokai&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Xplosiv&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3DO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Agetec&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ascaron Entertainment&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Benesse&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Creative Core&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Devolver Digital&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Empire Interactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Focus Home Interactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Game Life&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Grand Prix Games&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Her Interactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Imagineer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jester Interactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kool Kizz&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marvelous Entertainment&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Metro 3D&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Moss&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;New&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Office Create&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Phenomedia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Psygnosis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rondomedia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sold Out&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Strategy First&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TDK Mediactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TopWare Interactive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ValuSoft&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Westwood Studios&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Acquire&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Arc System Works&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Atlus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bomb&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Commseed&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Data Design Interactive&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ecole&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Excalibur Publishing&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;FuRyu Corporation&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Glams&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Harmonix Music Systems&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ignition Entertainment&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;inXile Entertainment&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;KID&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;LucasArts&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Media Rings&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mirai Shounen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NCS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nordcurrent&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Paon Corporation&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PopCap Games&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Reef Entertainment&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shogakukan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SquareSoft&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Taito&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tigervision&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;UFO Interactive&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Vivendi Games&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Zenrin&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Abylight&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Answer Software&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Astragon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Blast! Entertainment Ltd&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Codemasters Online&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Daedalic&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DTP Entertainment&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ESP&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Funcom&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Genterprise&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hackberry&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;id Software&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Interplay Productions&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kamui&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Liquid Games&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Maxis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Milestone S.r.l&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Namco Bandai Games&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nippon Ichi Software&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pack-In-Video&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;PlayV&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RED Entertainment&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sears&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SPS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;System 3&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TGL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;U.S. Gold&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vir2L Studios&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yamasa Entertainment&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;5pb&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Aksys Games&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ascaron Entertainment GmbH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Berkeley&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CBS Electronics&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Crimson Cow&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DHM Interactive&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Encore&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Focus Multimedia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gamebridge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Graphsim Entertainment&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hip Interactive&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Imax&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jorudan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KSS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Marvelous Games&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Michaelsoft&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MTO&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;New World Computing&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;On Demand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Phoenix Games&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Quelle&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RTL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sonnet&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Success&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Team17 Software&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Touchstone&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Valve&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;White Park Bay Software&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='vgsales.csv' id='vgsales.csv_F9E9C87719CB4609A0DB957C641580E3'>
+            <properties context=''>
+              <relation connection='textscan.1fjo1qz0ywzm9l1dpojxz1k2l8hh' name='vgsales.csv' table='[vgsales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Platform' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='string' name='Genre' ordinal='4' />
+                  <column datatype='string' name='Publisher' ordinal='5' />
+                  <column datatype='real' name='NA_Sales' ordinal='6' />
+                  <column datatype='real' name='EU_Sales' ordinal='7' />
+                  <column datatype='real' name='JP_Sales' ordinal='8' />
+                  <column datatype='real' name='Other_Sales' ordinal='9' />
+                  <column datatype='real' name='Global_Sales' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vgsales' name='federated.1raiyh20kc2qcy11u4fid0c7mccx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1raiyh20kc2qcy11u4fid0c7mccx'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Global_Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Publisher:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]</rows>
+        <cols>([federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk] / [federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk])</cols>
+      </table>
+      <simple-id uuid='{A76DDCA4-32B9-4FC7-9D85-5C7237777CE7}' />
+    </worksheet>
+    <worksheet name='Top 10 publishers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Top 10 Publishers Worldwide</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vgsales' name='federated.1raiyh20kc2qcy11u4fid0c7mccx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1raiyh20kc2qcy11u4fid0c7mccx'>
+            <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Rank]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rank]' derivation='Sum' name='[sum:Rank:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Rank])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Publisher:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2020</max>
+          </filter>
+          <slices>
+            <column>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]</column>
+            <column>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Rank:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Rank:qk]' />
+              <text column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]' />
+              <text column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Rank:qk]' />
+              <color column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4229FD02-1330-4E33-B511-11E65BEBB1D7}' />
+    </worksheet>
+    <worksheet name='global_sales_by_genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Global Sales by Genre (in millions)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vgsales' name='federated.1raiyh20kc2qcy11u4fid0c7mccx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1raiyh20kc2qcy11u4fid0c7mccx'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Global_Sales]' derivation='Sum' name='[sum:Global_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2020</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]' value='60' />
+            <format attr='text-format' field='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' num-steps='12' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2e9d2</color>
+                <color>#b5e2b5</color>
+                <color>#99db99</color>
+                <color>#7fd47f</color>
+                <color>#66cd66</color>
+                <color>#4fc64f</color>
+                <color>#39bf39</color>
+                <color>#24b824</color>
+                <color>#11b111</color>
+                <color>#00aa00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' />
+              <text column='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]</rows>
+        <cols>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{7FEF768E-87BD-42B0-82C4-3F92A306D167}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='global_sales_by_genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[sum:Global_Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]</field>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BE56EE49-3EFE-4181-96E9-B55D2BF6012F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Top 10 publishers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]</field>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9C504A09-0412-46BC-98DF-52B8BA17D8D2}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Genre:nk]</field>
+            <field>[federated.1raiyh20kc2qcy11u4fid0c7mccx].[none:Publisher:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{67AE6AE2-8FED-4CCF-8C29-302563953F98}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      EOrzR/MH8P8BBbebFJrjkwEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 publishers' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29d5Bkx33n+cnnyndVtZ8202a8A2aAgR1YwtKDJCRKNKKW5PKW2tAeT3cX
+      u3ERe7G3dxuxq9sLSbshKpYiKa5ISUsjEjQCCRAkvBmMNxjbPdPed3V590zeHzUzmMF0T1d1
+      V3fVoOsTgQBQ5r181fnN/GXmzwgppaRGjTWKUukG1KhRSWoCqLGmqQmgxpqmJoAaa5qaAGqs
+      aWoCqLGmqQmgxpqmJoAaa5qaAGqsaWoCqLGmqQmgxpqmJoAaa5qaAGqsaWoCqLGmqQmgxpqm
+      JoAaa5qaAGqsaWoCqLGmqQmgxpqmJoAaa5qaAGqsaWoCqLGmqQmgxpqmJoAaa5qaAGqsaWoC
+      qLGmqQmgxpqmJoAaa5qaAGqsabRKN6DG+wwpwbYhmYToHCQSkE5BNguWCbYDQoCqgmGA2wN+
+      P9TVQTgMLnfhfSFWpbk1AdRYPo4Ns7MwMgITYzAzC2Z+adcKBKCpGdraob0DvN4VFYOo1Qeo
+      sSSkLIzw58/BwMXCiF9uhICWVtiwEbp7CjNGmcVQE0CN0nAcGB2BkydgfGz17msYsHEz7NgB
+      /kDZhFATQI3ikLLQ8Y8cgunpyrVDVWHTZrh1T1nMo5oAaixOPA7734ThoUq35F0MA27dDdt3
+      FkSxRGoCqLEwjgNnTsOhA2CalW7N/DQ2wn0PFnaQljAb1ARQY36yGXj1leoa9RdC0+DOu2HL
+      1pJFUBNABZFSIiVYjiRrOViORAiBoQgMTaAqAmWV9sOvITILv32hYPrcTGzeAvfsK8kkqglg
+      lXGkJJqxGIvnmUjkiWYs0nmH9/4RVAE+Q6XBp9Ma0Gmrc+EzFMRKCkJKGBuFF38L+dzK3Wcl
+      aWuHhx8Bl6uoj9cEsErkLYe+2Qx9M1nmMlbJ31cEtAYMNjd56Ay6UJQyC0FKGBqEl18Eq/T2
+      VRVNTfDYk+B2L/rRmgBWGNuRnJlKc3IiTdZyynLNsEdjT7ufjqBRvhlheKhg9th2ea5XaZqa
+      4IkPgnHjmaAmgBVCSsls2uKNgfiSRvxi6Aq7uGt9AI++9G1AAKYm4blfVu9Oz1Jpa4fHnrjh
+      mqAmgBVASsnZ6QwHRxLY5Rn0F8RnKNzfE6TZry9tNkgm4Bc/g3S6/I2rBrZshXvvW3B3qOYO
+      XWYcKTk8mmT/0Mp3foBU3uGF81GGojlKHsssC1568f3b+QHOnoFzZwtrnHmoCaCMSCk5NJLk
+      5MTqdijLkbxyIcbgXAkikBKOHi6YP+939r8J0ei8b9UEUCaklJycSHNqsjKjqSPh9YE4k8ki
+      7fjJyYJD21rAsuDVlwsn2++hJoAyMZ7Ic3RsBVyCS8ByJK9diJHOL7KTY1nw1uvzdoj3LTPT
+      cPqd60yhmgDKQNZyeGMgjlMF2wkp0+GtocSNTaGzZyASWb1GVQtHDhci066iJoBlIqXk+FiS
+      VL56RtPhaI7h6AInubksHDu6ug2qFvJ5OHbkmlmgJoBlEs/ZnJvOVLoZ13FkNIk935R0+lTB
+      0W2tcvZMIUb5EjUBLAMpJacm0thVYPq8l2jWZui9s0A+X3BvXsvYNrzz7lqgrEHxUkrSqRSj
+      I8NMjI0RmZ0lmUiQz+VwpIOu6Xh8XkKhME0tLbR3rqe+oQFNuzlj83OW5OJcdvEPVoizU2m6
+      w653D8gGLr6/9/yL5dwZ2HMb6PryBSClJBaNcuLoEU4eO8rYyAh2Cf4kwVCYTVu3sPv2O1jf
+      3X1TiWE4lsOsxuH/EtMpk0TOps6tFUa8c2cq3aTqIJ8vDAabNi9dAFJKRoeHeeU3L3D6nZMl
+      dfqriUXnOPjWWxx86y2ampvZ9+DD7N57O8YiTkzVwMhCC80qwZEwGs8XBBCLwcxMpZtUPfT3
+      wcZNpfsCSSmJzs3xq5//lJPHjpV+/F4E4YYGPvjRj7F91y0oSnUuUyxH8uMTM2TM4nZ/pgbO
+      YKs+QvUhDJebfC6Hpqk4KGDnsaWCNE08IT+nX3sRb3MXza2NaJqOdCSp2CxGsBUNk1xyFj20
+      Hp97cSe49SEXD28MwfGjcPDAch/7/YMQ8PufK20GcByHA2+9yXM//xnZ7MrZvnOzs/z9d/6G
+      bTt38tTvfJpAXd2K3WuppHJ20Z0fYPjsEZo37ubiiX5MS6K6NFRhMz0do7neRyyaJtTczcY9
+      22jo3EIuG2Vm4BTpvEk2p+JWTHwtkv79z9Kw6Ta66zqLum8kbeI4EmV4eKmP+v7kUpaLogWQ
+      y2Z55oc/4NjhQyvZrGs4ffIkYyMj/O5nP0/Pxo2rdt9iiGVLc3Heds8HyWWS5JNJ2tp7cHl0
+      4rNT+Oo7aGxqIJ/NIaWGQCUdHSXYvhmDevqe/wmdtz1Ja1MdiXiSrh13EGjuxK0XNzOmTYd8
+      OoN7tmb+XMfYaHEmUDKR4Hvf/iZDAwOr0Krr0Q2Dp3//M+y8dffKhgSWwJmpNPuHEpVuRlE8
+      VZ8j+NJzlW5G9VEXXHwGSCWTfOuv/pLJ8fHVaNK8mPk8P/jed7Esi923760KEZS6+3P6zedo
+      6L6VQMCLlUviqHW4dInu8mBmoiTSEp/XQCiA6kLaFrqqYFk2quHCNnMYhotcPk8qOkOwqR3D
+      0Iu6d35yaglPuAaIx24sgFwux3e/9c2Kdv7L2LbNT77/fbw+H1u2ba90c3BKXPxbZh4zMceF
+      wZNIVcHjbqD/xOu09+wk0BwkFbc50/c2vo6t+DxB7FwGzaOSTaZxaTDQd5qO3ltAK/wWnrqm
+      ogUg5+aW8ohrggUFIKXkpz/6IUMDF1ezPTfEskx+8L3v8tWv/QmNTU0VbYtaYlB6INyI6vbR
+      u/MOLCtHLBJnw869hFu6CTbXMzsyjFu/HW99K253AEMXWFw6qndMNLePcGs3Hq+LTDKKaRa/
+      BlGztcOvhZh3DSCl5ND+/fz4+/9QiTYtSmdXF1/+l3+Mrhc3Aq4EfTMZXh+4OfLmfOrsb/Dn
+      Uot/cA0y7wyQiMd59mfPrHZbimZ4cJA3XnmZBx95tGJt8BtLD0SfGz2H9K4jXOei/8QBVE89
+      7lArhjnDXMJk45ZN9J84TKCpjejYIA2dPcxOTrJh522oJR6LGEJiOOUPdv/VieN0NjbTHQ6i
+      ajrZXB4hBD6XTtq0EdLG4/JwcvAC4+k892/sRQgFxzYxdBeZ+CQzaj2NBpi2Tb0heLFviM3t
+      HQQ0gd/tIpXLI4SCSxVIoZLN5wl5PWVdA14nACklv/r5z8hmqttj8KUXfs0tu/cQbmioyP3r
+      3CqKYEkxAOGGJibiJkIN0LyuHelpJiO9+HyQs+MgHSzLZnZqnPqGRqJjg+RsBdO0UF2lHd77
+      hI0uy++q3eTWOTU5x/D4IBlVxytV8kJHcWlsDXk5F0nTHAhg2wVT7eiFc/Qnbbq8KgKBpjik
+      1Cw/HR7ivk0b0L0GTQ31TEQm+WV/H/UtPfjJ4zJcTM2MEw43MTgZ4fcfuIeAuoICmJqYWNW9
+      /qWSy2Z5+be/4anf+d2K3N+tK9S5NaJLSHkyPTrIdNxBc7IINIIuh4tHD5DQ8yjeemamp/G4
+      dYThZWJsnLaeXnJjY8jr8sctTotXRazAaf2G9i688TjS8mG43DR6vNgoZM0ssxmTFrdKZ0M9
+      qYTEUi1aPRrBsEZnnR/HynFucpoN4SABvYeucJiQ38uFixdpCdWzp2cDoWATzd6CiTsd8IDu
+      Jmi40FeyQIaUkh/+3fc4euhgWW+yUhiGwdf+zf9BKByuyP33D8U5M7XEmVI6WLZzvfOfdLAs
+      B00vj1Pgw+t01v/6mUIZoxrXcY1FmU6nOHETRQvl83mOVNC/pTu8eOq9BRHK/J6vQilb53dp
+      gtaga9UKzl3NuYHTHJ9NE0tE+fGBAxwZGeUHh47yVt85TowXCmycvXiKQxNzvHFxkEgswk+P
+      v4O5ynGl1wjgxJGj2DdZXshjhw7hVCi4u9GnEyzCIa1SdIXchbOCcucRXQQrn+LA4BjD0TjB
+      QJBN69q4ta2Zba2t+HWNmWQSK5/kwNA4k+k8DV43PrcbTcBq/yWvCEBKycnjN8/of5npqcmK
+      HdSpimBbs7ci914MRcDWFm8hd/4yKqgsBc3w8dl9+9hWpzKZztIWrieXM+ltacbvctMa9HMx
+      muVz+/axK+xmaGaGwWiCkC+AtsqT1ZW51jJNhi5Wz6FXsUgpudB3nnXt7RW5f2+Dm3cm0yRy
+      1WVjd4XdhNxqwfzxeq/LhrDiaG56m643EX2tbdf8f2fYTWc4CMDmVWnYtVwRwNjoKNZNZv5c
+      ZmhggH0PLu27UkrMTJ7UbILUbJxMPI2ZzePYDkIINJeOy+/BV+/H3xjE5XejXLUZr6sKt7X7
+      eflCrExPs3wMVXBbu//d/fJAYG2mQSmCKwKYXM2Sl2WmVBPIsR1iY7OMnxpmun+cxFQMuwjX
+      AqEIvGE/DV0ttG7toHFDK7rbYH3YRVfYxeBcdUSI7W7343ddZfaEwjA4WLkGVTFXBBCZnS3L
+      BYXiornRhy10DF1nanIGl1FIQmY7Aolk27atTE1OMjkxvlDO0pKIx6JYlrVoPLGZzTN8uJ+B
+      A+dJTM2fK/JGSEdemikSDB3uw/C5aL+lh957tnL3+joi6UjFTaGusIstTZ5rX6yvzGFh1eN2
+      vyuAZLJMvu1CoBsGmmLg8Qbo9NVjaFl8hptE1kZKSS6bIRSuZ3pinHJ0F8uyyWYy+AOB+d/P
+      WwzsP0v/66fIJsp3wp1P5bj45hkGD5yn45Zu7rxnB69NOeSsygTKN/p07umqu76uWGMTKMra
+      SoVYDE3N7wogn8uX5ZrSzmIrHjLRaRTVYG5mCk1X8Xvc5KWGmYqSzZvUhZsK29Nl6CtSOpjz
+      FHeQUjJzYYKT/3SA+GTpI36xOJbN0OF+xk8Ps37vVgYaWzFZ3e2Meo/GwxuCuLR5nIX8/sI6
+      IFY965SqYF3buwIoZ3D7+FBhNyka77vy2nu7XyZTvhhVKeV1SU9ty+bcSyc4//IJ5CodrpiZ
+      PNOvHqeubZzYrduxiqhRVQ5aAjoP9YYWDpMUAto7agJ4Lx0d7wqgHK7FrR3duDWbgYFxNm/t
+      4eLAGB3rGsjaKiGfzunT5+jauJVUNEJTWyuRmRiN9S7OnT6/rPw6QlFQr7L/85kch77/KlPn
+      K7Owt8em8Uf3k79nD+kVDOgXwNZmD7e1B9AWcxDr6oZT76xYW246giEIht49CPP6fMu+ppnP
+      MTs9A1jEYgnMbIpUJo+iqGiaDij4Az7qWzqYmxrG43PjSBdez/LEp6oqrkujbTae5s2/eaFi
+      nf8K6Sye1w7SnU1glNF78TJBt8oHNoW4o7OIzg/Q3FIwhWoU6N0AQrw7A5TDoczj9aErArfP
+      j78uiGM71AWDzEXmiFoaTS2NjI2MothZ3HX1TI+N0tTSRCq9vPWH1+vFMAzy6Rxvffe3xMaq
+      Y8/bzpkkf3uAfZ9+kElvgPMzmWVnkvPqCh0hFw1endmUyXg8j+1INEXgueShWu/V8OrvqSms
+      qrBh49rNDH01QsCmTcBV26BNLS3Lvu7IwLs2//TU9KV/FwKyr9tkjRRWBakLyy8q0dzSimPZ
+      HPiHl6um81/Gypm884+vsu+Lj7NzZwODczkuzGaJZMyia4gZqkC/NMrbjryUjXrh3SxFQMij
+      0VPvpqfejVdXCxsOm7YUqsK8X0qhLpXO9eArzIZXBNDRub5i7Vku7Z2dnHr+CDMXJirdlHnJ
+      p3Ic+sGr3PeVJ9na7GVLk4es5TCTMplNWySyhSRbliMRAnRV4NXVK0E3g3M5ppNm0RtmjoRI
+      2iKSTnJ8LMXGRje71vnw1NVBd08hLeBaZuctVzxkrwjA6/PRsm5dVWSAKBVP3sWFg9Wd+DU+
+      GeXkswfZ/Yl7EELg0VU6Qyqdofk/bzmSY2NJTk2ml1V5xnQkp6cyDMzluKMzQPeuWxEXL6zd
+      M4F1bXCVtXNlESyEYNuOnRVp03JwGx5i70wvWAazmhg+3M903+IDTDpv8+tzc5ycWF7nv5qM
+      6fDqhRgHUzp2b3Vl2VtVbt97TXzENRvHu2/fu+rtWS4tNGKlb44K51JKTv7y4A39jpI5m+fP
+      zTFVbLXHUu4PnJpM80Z4E7ZulP36Vc+GjdDUfM1L1wigqaWF9d09q9qm5WAInSb15vJzSUxG
+      GTk+MO97Wcvhxb4osezKLlIv5FQOtO0sxyH8zYPLBXfcdV103DUCEELw4COPrGq7lkOr1owq
+      qjciayH6X3sH27q2kztS8tZgnMgSguyXwtm6ds7Xd60dEdx9byEu4j1cd3a+ZfsO2jqKS71d
+      SVRUGrXGSjdjSSSmYkz3XXtQd2E2u7ru1EJwcN12kq7lH4BWPRs2Fg6+5uE6ASiKwkc/+cmq
+      SEB7I1p8Leji5imn9F6Gj1y44ggopaR/dvXzMJmqzqH1tyKrtAhJWaivh3v3LZgYYN4nX9/d
+      wx333Lui7VoOPr+fLeu2VLoZy2K6fxwzWzgBn06aTCYqs5Af8jQS2ba7IvdecTwe+MBjcIMF
+      /7wCEELwwY99nNZ1bfO9XVEUReFjn3gaq8rrcy2GmckzN1IoWnFmOlMxW1wCZ5s3wk24BX5D
+      DAMefRwWcUZccO5zuVz83h98oSxOcuXkgUcepbNlPfn0zS0AgNmBSXKWw0isss8yFMth3n4n
+      bN1W0XaUDV2HRx4rBAItwg2Nv+bWVj73xS9XTcXGvXffw6NPfpDYeHX5+yyV2HiE6aRZ8VKr
+      OUsym7ELOyU7dlW0LcvG5YbHn4TWdUUlBFt09dPV08Pnv/xlPB7PYh9dUe645x4+9qmnURSF
+      5HT50pKrRuUW0smZOJOJ0jxhc6kYmUz5U5xMJfKFsMk77yr8czMujOvq4EMfgZbWorPhLfrX
+      F0LQu3ETX/zqv+Tvv/Nt5lY5vYaiKDz06GN84Iknr5RMzcTKl+u+YVMn8YsjuBtCeINeEjNx
+      7FQa0wLD70J3G1iZHLYtUBUHxe3GjCfIJJZvtpiZPLPxEjqzzDN0/jzNnZ2MXThDY3MzkUiM
+      Or+BLQwSkQjhhhBzs7O4Aw20d3UVfeno5cM3IQqzQDAEr74C2erOEn6Fjk64/8HCwrcEipK5
+      EIL2zk6++rU/YdvO1Zsi/YEAn/3il3jkyQ9eUy+4XPa/4vbgMgSh7jZUTLLxNOgarjo/gbAX
+      l89DXUsYb9CNN+zDEwqAY6F5yzMb2qZFYgmxENnELP3HDjAyMIKZnmNicppcbAIzm2FsMoLL
+      50WhtF2ldP6qgzkhCi7DH/04tFUm4VjRqCrsvRMefazkzg8LVIi5EY5tc+zwIZ77p18QX6EY
+      U0VR2H37Xh7/8EeoCwave//Vb/yKyGAZCr8pCkI6CEVB97iwTRtwsE0HISQIBd1jYKZzoKqo
+      QmKZhY5SjjhjoSqknnyAfAlrrGwyioOGmctg5zKoviBuTWCjYmYz+ILBK+H4qlZ8pF29V+Oj
+      2+dxK3EcOHsGDh+EXJVtPLS0wN37Cnv9Szy3KtkAVlSVPXfcyZbtO3jztVfZ/9prZUupoigK
+      m7dt48FHHmN9d/eCh3FlO6NzHIyAh3wyQz5rYrhVrLxA1QSoOtI0ySUyGD43ViaP4jMQNmi6
+      IJ9Z/r69gKIPHKVjkcuZuP0hzGwaw11POjqN2+PFNnN4fT5sQyOZSOJxqZiOClYMwxdG1xd3
+      F1mwFYoC27bD+i44ehj6zlc+oMbvhz23F054l7lWWfIK0Ovz8cgTT3Lv/Q/Qd+4sE+PjnDp+
+      jOmpqaKzNSuAx+Whq7uHzTu209nbQ2tb+6KdQnOVpzaYUFQC6+pJj09jYrBuawvpuInXp5Cz
+      Nex4lNnJDO23tJOcTeH2aqTjJr46jaGjQ8u+v6IpeN0axeTSyqYSTE1O0rVxK8nJQUx/C7Nn
+      j2DU92DbGTbv3MPMwDucOTfE1l3bicZSJEbPoTf0cusddyx6ffd86VSuxueDe+8rnBeMjsL5
+      cxApTzK1olDVQjDP+q6CvV+m+nDL3gLxeL3s2r2HXbv38MgTTxKLzjEyNMTE+DiR2RmSiQT5
+      XA7HkSi2gz6boSGvEcaFV+h4cKEOq4ixPpK+EYZbwvg2tOHfsh6jKTivGNyB8mRkFrqO26OR
+      0Q0MoZBNm2QiMWTehTAMHBQMQyE1l0FIBzProCoSs8Qq8QuhGTp1dW7m5hZfB9i5NBNDF/AH
+      68klY8zOpvD6Q0gnQ2xiiIlQA3lbIRgKMDF4kUBrD609m3CM+qLaUneDNO9SSrLZDIlYnEQ8
+      Ts6RKBs34Y63EJyeIhCLoq1EXlkhCmkdezcURnufr+y1DkpeA5SKlBIzkmDmlWPEjpzHThW3
+      6yFUBW93K40P7ca/dT3iqqnu3MsnOP38kbK1UXMbWNnrO6FQVRRFYpsrEz0V6mig5VMPl1Rx
+      PpNM4PFfnwEvm0pgeP3XZ4Urkn3ddWxsfHcRKaVkenKSE0ePcP7sWaYmxsnOk2FaURT8bjc9
+      Ph9bQ0E2BUN4LXPpZpLbXUjl2N4O7Z0QCq3oluyKboI7psXMi0eYefEoTr40m1naDqn+MVL9
+      Y/g2dbDuqftwtxZGs7qWBeIIl8h8nb/QBntFzd26ljAtgdICU+br/ABu3/yvF4OAK+2QUnKx
+      v4+XX3iB/vPnFjVnHcchnk5zLJ3m2PQ0Ho+H22+9lX17biPoOJBMQCoFuSyY1qVSTaJg0rhc
+      hQ7v90NdsDDa+/2Fmgar5Iy5YgLIz8YZ/rtfkxmcXPa1UudHuPBff8y6p+4jtHcLobYGhCJW
+      LePbShHubCToVgl7NOZWKQ5gPhp9On5DIR6L8cuf/ZTjR48glxgznMlkeO2ttzh8/ASPPPkk
+      d967D3WVC3SUworMLdmxWS5+/ZmydP7LONk8o99/kekXDmH43ASayzsLrDZCETR0t6AIwYaG
+      1UmhuBAbGt1c7Ovjr/78zzh2+NCSO//VpNMpfv7jf+Tvv/NtUqnlp75ZKcougNxMjIFv/gIz
+      ugIPLSVTz71N5NXjtGzpKP/1VxF/UxBfQ8Fs2djoWXwXZoXwGQqpoTP8929+g1h0ruzXP33y
+      JN/+q68TnSv/tctBWX91J28y/LfPYZXRVeE6JEw8+xZBQ7nB5nX1076z+8rptktT6ApXxuHQ
+      FRngmf/xd5j58mQHn4/x0VH+9q+/QSpZfTNB2QQgpWTyVwfIjs6U65ILYzskXj5KsHHlEs+u
+      JKqu0rGn95rXdrb6cK9yhTg1PcuhX/1oVUpjTYyP8f3v/W3VVSEtmwByExEirx0v1+UWxYqn
+      COZWufBbmWjf1Y03dG2chd+lcndX3aqV9NWxGXv95+RX8TfsO3uWV196sayp+JdLWQQgpWT6
+      t4eRxSa7LBN6JIbPXx2xCsWiaCob7tsx7wHf+pCLvR0rn8HZUAWusWNEp1Y/g/ZLv36e2ZlV
+      sBKKpCwCsBIZ4sf6y3GpEm9s09ZQ/tPBlaT7zs0Emq938INL2fmavdzR6V+xR/JoCve06Zx+
+      +9WVucEi5PN5Xnz+uaqZBcoigPiJ/lUf/S+jRxN03HpzJPPyBH1sefiWG/o6XRbBQ73Bsq8J
+      Gn0aT2wNM3jyEOnUCm5ULMLxI0eIzlVHVN+yD8KklCTPlq/cUankZ2Js+f1HmRuaJhUpU6G/
+      FUCoCrufuhvDWzDZpJSkY3PEZiaJz0yQTsSwTRNV03B5/dQ1NHN/UxNn0y6GY9ayguZ1RbCj
+      1cuOFh+KcDhy8EB5HmqJ2LbFsUOHeOixxyvaDijHSbCUZEamS79xqA7v+kayo1PYtoKmCfT6
+      OjIDo9j54mcTaTs40QS3/c4+3vj2ry/59Fcfmx/cSePGdcyMDnDh6H5Gz54gNjOJYy+8KyKE
+      gjcYxt+6kWz7bqzwemQJmfDcmkJvg5ttzV58RqFGwMTYJNOT5TugXCqnTpzgwUcfq3j+qWUL
+      wMlbWPHSp1MrmsAMuNBCYdxhH3J2lsTFSVz1AezJ0gJtcjMxGnf2sPsT93L4R69VnYtEx609
+      eFokv/xv/5GpwX6kLE7gUjqkorMQnYUz+9HDLYR2PIBv014SlnKlpoCUBX8xXVHwGQpNPp11
+      QYN1AQNdvdbKvdjfVxX29/jYKOl0Cp+vsmWbli0AO5NbYqlTiZXMIO002ZkomgqBrZ1k+gdK
+      b0MqWwjbvKUbM5PjxD8dqBoReBpUJiNvcOy7y69fYM5NMvPaD7HOvcYdH/49WrbuxJEgkQgh
+      0IRAVW4cZDM+Orqke4eaWgn5DAYHhsqSw8i2baYmJunZcJMLQFpLNznMuXdPBvNAfok2/OU2
+      CCHovmsLqqFz7Kdv4SyjbeXAUmcZnzmDbZf3lDU6Nc4L3/kLtt37AW5/8mn0EkIql7oFadsO
+      mqZxy90PYCYiOFIghU1nRxsvv/CbJaV2icxM07Nh/pydq8WyBaCUkFZEDdXhbvJjJfOoOtiW
+      QFFsMuMJfBtbMGfj6PVB7GQazauT7Cuu5JFyVYSYEILOPb24Ax6O/OPrZa0MXzQCsgyTyvVT
+      lkrg8yClw6nXXyAyPsIHPvtHuBdwk34vmUx6SfcTFFyfZydGyaXT9GzeSnJujNGhkSU/YSZT
+      +YwTyxaA6nUjVKWobVAhQPjq0J1ZtFCQZP802mVPSKGg13mw01kUXSGfsSi2kLz2nggxIQTN
+      m9p44F98iKPPvLmqJVPdATdJeY5UdHXORSYunOFX3/rPPPHFP8ETmP984WqW6vYQj0wRv2rn
+      MpVOkE0ll1XBZjVcMBZj2ecAQlMxGorzybGzJjIZIxvJkZ+KovrdODkbI+xBmg5W2kLz6FhZ
+      G92lFj2yuFrmL/HqCfm46/Mf4LbfuQ93XXnCKBdC0VR6923D05Mitkqd/zKRsSF++72/JF9E
+      Dh/DKDYAR9DZuwFNAc3wsH59O3WNrXR3dbCus5vG+iCOhFBrN22tTWzZvp1wfSM93euL9lEs
+      vi0rx7JnAIHA272O3FR00c/KTIZUX+GPZF3tHSsgP1PI9pa7ZPUUazULQ8Pdvvhga2sAABL/
+      SURBVHCdAEVV6NzdS+uWDgYPnefCG2fKmlhL1TU6dvewYd92xi4eo+/lypywTg6cZ/8v/oH7
+      PvmH14SPvhd/oNjIMUkikUIRkM9nyJk2qqqgGy4UxUBHQ6gu2js78Ms4x/sn2d67jmQqh6YI
+      zCKmBn+RZttKsvxzAAH+bV3MvX166ddYxjTq7WpF894ooERiW3kckrTvbqB1x91Mn59m4tQ0
+      kcFprHzp07BQBHWtYdp3dtOxuwd3nZfY9Dhv/+IfWCmbvxjOH3yNto3b2bD77gU/09jUzLnT
+      xfytFMIN9fjcOplUkvqGRmZnZrAdh0w2gyVsGhqCDPadI+AWdLaGON83QnNLQ9G/QGNz8+If
+      WmHKEhIZ2Loe1ecuOuC9nIT2XlsnQEpJOj5MZPwgkfGDJCN9ZJITOHYW6dggBELR0I0Addta
+      cDLNYHWjyC7yCUk+k8fOW4WoKEWgaiq628AT9BJoCRHuaKKhuxlvyHdlpHUch7d/8X3MSnun
+      SsnBZ39I+6aduBfYX+8sOl2iw8UzpxBCQUqHSKQwZV+djuxyWGoSGB8vHK7FY8UFvrjdnveP
+      AISuUr9vJ9PPHyzH5YpGDwcI3lLwq7etDOP9zzNy9idEp44jnRuM7HYe20wD756I6q4QzXse
+      on3TJwmEt1EYyQWKqqBoKoq6sFkx1neKkbOr5wp+I1KxCO+8/jy3P/7Jed/v7u1F07SiF6A3
+      OrRbzlnL+p4e9DLl9lkOZXGGE0LQcN8t1+3GrDRNj94OmmD4zI959Yef4sTL/5a5icM37vwL
+      YOaijJ57hgPP/jOOv/K/ks0MYXhdaC79hp1fOg4nXnp2OY9Rds6+9RLZ9PzRV3XBEF29vfO+
+      t5rcuue2irtBQBkDYjSfm9aPrV5ZJd+GNvRNBm//4sucfOXfkUmMlOW6UtpMD73Cm898lnMH
+      /iu2deN8mNGpMSYuni3LvctFNpVg8MShed8TQnDH3ZUtf+X3B9i2qzrqEJQ1Jji4ZxPhO1e+
+      yoga8CD25njr519gbuLwitzDsXP0H/lrDjz7P5FJLHyOcOHY/rJkUSg3/UfeXNDnZ/uuXbS0
+      rlvlFr3LPQ88gMtVHYFMZRWAEIJ1n7wf/5aVK7OquDTsPROcOfYfsfIr7/48N3GY/b/4EonI
+      +evek1Iyeu7kirdhKcyMXCSbmv/30TSNJz760YqYIPUNjdx7/wNVYf7ACqRFUXSNzi88QWBH
+      +YNUVJ8be+8Uw5P/AylXz88nkxjlwLP/guTchWtez6YSzE0szblspbHMPDMjAwu+v2Xbdnbv
+      XTxpbjlRFIWPPf00Lndl8yBdzYoko1FdBp1/8DhNj+2FGywgS8HT1YLrCY2R2R9Rib32XHqa
+      Q8/9K7Lpd2MfErNT2FYRKR+FSl1TG4bbU3qoo1DQl2guzE0svC4SQvCRT3yS1rbVqwT60KOP
+      s2nL1lW7XzGsWGpERVNpfuIOAtu6mPjZ66QHinNsey+qz03TI7ehb9HZ/8svQZG+9CtBOj7E
+      yZf/Hbc98ecoik5sprjAEtXjo76plYTHj5mYQnd7sTHwBBuwE2PYUseRCvlsirpQkGw6hWkr
+      YCawVR8NYT+RSJxwUztmdgYpdCLDF7EXWXvEF2mfx+Ph81/6Mt/6+l8SmV3ZVOd7776HDzz+
+      eNWYPpdZ0XRkQgi8XS30/NFTdH/lo9Tt6r3Gc3PhL4K7rYHWj97Lpn/9GcL3bePk6//+0t59
+      ZZkefpWhUz8AIJssvVhfw/pNNLV346sLkI7HcISGzKdR/E3Ut3eSTaXx1QXwhcLYlk2wsQVX
+      XQOBOi+RiVEs0ybc1o2riN8xU0T7wvUNfPGrf0RLa2vJz1Is99z/AB9/+mmUKswRuuLp0a9G
+      SomTyZEemiI7Mk1uJlYIqHEcFJeOHvTjaqnH27sOIxxAXDKfLh7/W8689Z9Xq5mLoruC7PvU
+      Dznz1n6O/PqZIr4hcHl9WPksjiPRdR1bAo6FUFRsM4+qGwVzSsrCCbNQETg4jlOI+BLgOBLN
+      MBCKipldfDBo27idJ//5/17UM6VSKX76ox9w8ujRoj5fDIZh8MGPP8Udd99zTY23amJVa4QK
+      IVC9bgJb1xPYur6o75i5OBeOfmuFW1YaZi7GxWN/g6IUu5ctyV19MKV4cLJJJArB+ibS0Tk0
+      XUV1ebEzcSzLxhcKkUnE8foDZNJZVMXByZtY+eLrdAml+BHX5/Pxe5//Aid23cJzv/j5snN5
+      bt66jQ99/CmaWlqqzuy5msoVyS2S4TM/Jp+tvsSqo+d+RlPn0na6fE2dZCZOYxv1hBsayKVT
+      1NU3g6ogrSCxWAZvKEhzRwepVA5FRNA9kshEackHXJ75T+allEwmJjg9eZKLkQtMJSZI5ZNI
+      KfHoXoL3B8n258gOZiBZvIGg6TqbNm9h30MP093bW7Wj/tVUtQAcx2LkbDEmxupjmSkSc0vx
+      fRKougtPIEg6b2OrHhrbu8gnY2ieIJZtomkqhtuDYzvouk5aKPiCdSULwF9/rZu4aZu8PfQm
+      vz7zLP2z57GdG2wlGyA2Cjx5L+vMdXSK9aSiSdLpFKZpogiBbhjUBUO0rGuld8MmNm7ZQqCu
+      rqpH/PdS1QKIz5wiFb2w+AcrRDp+DCg1TbskNnoORXOBlWai7yS2ZaOpAntqEqFqaMJm8mIE
+      K59H0zWkFOQHSy9JG2wqnPZKKTk1eZLvHvgWQ3MDxbdUSNKuFP2uPmK+GJ9+4vPsbb8LKQtB
+      +IqioGnaTdXh30tVC2B6+PVKN+GGOPYsuqsDs8TyuYUF7LWL2CthCWaOq135rEtpy+1Sq7IK
+      QdP6XizH4sfHvs/P3/nxjUf8RZhJTfP11/6M+3of4g/v+gpuvXoOs5ZD1RppUkoiY6vrXl06
+      Fi5vdWaoDtQ34Q4G+W+v/xeeOfHDZXX+y0gkr154kf/3N/83iVzpW8DVSPUKwDFJRS+W+B3J
+      8FiG6dgi7tBSYloOuRIy0C1E/brVdQEvls5tt/KdA9/k9YuvlP3aZ6ZO8ecv/SeyZnWKvxSq
+      VgBmPkkuU+LppIBM0sFlCM5dTDMTyXNxLMfpviSn+lPMzJmcGcggbYeD7ySJpWxO9aWIxEz6
+      R3OMTZdoywB1jW58weJq8a4WQlE475nllf7frtg9Tk++w/cOfrvoLHfVStUKIJeeoVSfHyEE
+      breCkzU5eDbNwEQeTYDPp+LzKgwM58gkLXIO+NwKkdkcGVNy5J0EZ4azZHOl/zFtK862ez5Q
+      8vdWlOYgv5lc+eD8F8//miMj88cd3CxU7SLYtpbm9tDR4UYIeOpBHcNQsCyJoRd2KTqaIW9J
+      3Lpg5yYfUkLedDA2+8hZEpde+m6GbWbYctdDnHrzN6SLjIddSYSicDocJV/mbHTzIZH83aHv
+      sLPtVgy18ilOlkLVzgBLrYAnBCRSNl6PiiogErcQAlIZh1TqUppxIcjlbBIpi/EZE8uWxJM2
+      qrK0e7q8PvY++fSSvltulO5WxtTFU9SUi/H4KG8PvrFq9ys3VSsATfct/qF5kBLGpguj3/BI
+      mpmEzVwkz5mRDBOzJiOTOaQjOd+XJOkoWHmHvotpEtml2bKX29m7+y66d+1d0jXKRV1jC8mN
+      IZyr7HK/u5HNjRsWHE7WhXpp8d14DSOEhnaDvf4Xz79w064FqtYEcnkbQShLcH+WxOMWkbiF
+      oyhk4nn6sirRpIUnqKG5Vebm8kRTDnraxudV0bOSsakcPe2ukn8Qt78FAEVRufcTf8DcxAix
+      6aW5fi8H3eXm3qf/kP9w8E+ved3nqkMTCr1NO1CcHG53mGw+QSoXI5qK4lUdRtIOt7TdTiaf
+      JOQJks0nyEodrBwJM0p9aCOe3BRGoJdkaoS8meHs7LsHlOemThPNRAl7q2szoBiqVgCa7sPt
+      bSKbKq2YgxCCHZt85HIO7W1uWptcuFwKjiNxbImUkowJ998ZvmqJbbCuTS7px/AFu6/8t9sX
+      4NEv/M/88ht/Sjq+eusBRdV44NP/HDPoIpq59r55K4Pha0U4EonDVGwAhEF3uJvx+Jvoepi2
+      gIGqqGjCZiQ6BFLQHOwma+dpC28gnY+TcySqnSFrm4xFr60IZEubs1OnuLv7vlV75nJRtQIQ
+      ioY/vGFJAvB5VXzegiek7ipM3aoirtj4l1NSXj2pu42l2f91Ddcm5go2tfLEl/6EX//3vyAZ
+      WflqiJrh4oHf/TLrt+/hjYuvIN+zczaXGmcuNX7Na6rqIW/GkcCZiSPzXncuGyVrZeDqneiZ
+      vgXbMTw3xN3dS3yIClK1awAhBA1td1a6GTdEUV0EW2657vVwawcf+sq/prl704re3xeq5/F/
+      9r/QtfN2hBDMpOZ3ltvYvIsmTyGBsaroOHaGuezlgHkF/bLbtFBxqYUxMWvNn2hXU/R51xML
+      3bvaqdoZAKCp8z7Ovv0XVDLf5o0INm3H5Zk/Ma8/3MiTX/7fOPabn3Py1eeKix0uGkH3rtu5
+      +2OfxVsXuvJq1py/04Y9YTJmjNsbtiElJPOzrG/YxmjkHI7w02DkiTsBLCuBbSWp8zYST8cJ
+      eoKkc1H8gW4ymTEM1QcSZpMDDMSunZkzVRCttxSqWgD+8AbqGrcRnzlV6abMS9vGj9zQE1LT
+      DW574pP03Honh5//McOnjy97t6ShvYvbHvsEHVt3IcS1E7iyQABM3s4jBAxGBgkYXnTDRSoT
+      IW9nGYwMY7SsR9NAqh6wkwzMDVKveRmJDuMg8HgzpK0cY7EZQi4vzjxBhGoJwTfVRFULQCgq
+      ndue5p1X/32lm3IdujtEa+9ji35OCEH9uk4e+YN/RWRsiLNvv8zAyYNkk8XnNNJ0g/Ytu9h8
+      xwO0b9qxYGyt35g/3fixkbeu/PfMPAP1iYnr65ddbfpPJd9NDDa7wEDvd1U+1flSqGoBALRv
+      /DD9R/6abHJ88Q+vIuu3/S6GO7T4By8hhKChvYt7nvo8d37408yMDjJx4QyRiRHiM5PkUkls
+      20JRVAyPh0C4iVBLGy09m2np2ojh8S3qd99aV1y2N13zEjJcJCwbl7DQ9BCOlWAum6A50MpM
+      chqf4SFt2TS6vUymFvfJaglULtPccqh6Aai6h017/4gTL/3bSjflCm5fC927Prek7woh0AwX
+      rT2bae3ZDFxKFmDbXMlIrSg3LHKxEJ3hLjRFx3JuvN5YX7+Jdb4g0dQMlpT4vc2cH3+bOm8b
+      XqOODSEFR7jxuJtIpYsrgr6hcWUX/CtF1e4CXU3bxg9TXzU7QoLNd36tpNF/0SsKgappqJqO
+      qmlL6vwADd5GOkKLR6hNxkcx7RxS0TFUlbn0LF31GzBUjZAniC2hMdCKY+doretkMevebwTo
+      qa9stcelUvUzAICiaOx68P/izZ98puIB8m2bPkLbxg9WtA0LIYTg3p4HGIjcOI4inZvj0MhB
+      HAkCiVA0VMWFQZ530hPYjs1YMkLeNlGFYLFQmr3r78KlVUey21K5KWYAAG+gjV0P/T8oSuW8
+      DoNNO9i+799ct/tSTdzf+zA+48Z+VI60sRwbR9rY0sGy8+TMBAkzh2nncaRN1sriSBtzkVoL
+      ilB4fMuHbtq44Or9S16HoKnzPnY+8H8ixOpvufmC3dz2+F+gL7DTUi0EPSGe2PqRVbvfnV33
+      0lVf/kTIq8VNJIDCFN+26aPc8vB/QFFXb8qta9zGnR/+a9y+yte0KoYP73iK9mCp2SpKx+8K
+      8JnbvnDTjv5wkwkALtUg2PBB9n7w67h9K5fP8jKtvY9z54e/ccXr82bAo3v46r6v4dZWLnOD
+      IhS+fPdXafAtXKL2ZmBVc4OWm1x6htNv/inj/c9RbncJ3RVi851/TOeWT5aUYrBakFJyaHg/
+      /+WV/2/RbdFSEQg+s/cP+dC2j93Uoz/c5AKAQhXD2dH9nD/0daKTx5Z9PVVz077542zY8xXc
+      vqYytLBySCk5PHKAv3ztzxb0EyoVVah87o4v3tQL36u56QVwGenYRMYPMXL2J0wNvoRlllYN
+      3hfsZt3GD9Gx5SncvupO6FoKUkqGo4P81Wt/zmAJWeHmo8HbyFfu/WN2rrvlffP7vG8EcBkp
+      JbaZJjp1nMj4QRKRPtLxYfLZORw7jxAKqu7F7W3GF+oi2LiD+vY78QW7UJSb4lhkSeTtPM+f
+      eZZ/eucZYtnSYobduodHNz/Bx3c9jc+YvwD3zcr7TgDXU4gCk85lVwNAKAihvm9GsVLImGn2
+      D7zBGwOvcn76LDlr/uRWmqLR07CBu7r2sa/nAercwffl77UGBFBjPqSU5Kws4/ExJhMTpPNJ
+      HCnxGl6a/C201bXjNRZ3wLvZqQmgxprmpjsHqFGjnNQEUGNNUxNAjTVNTQA11jQ1AdRY09QE
+      UGNNUxNAjTVNTQA11jQ1AdRY09QEUGNNUxNAjTVNTQA11jQ1AdRY09QEUGNNUxNAjTVNTQA1
+      1jQ1AdRY09QEUGNNUxNAjTVNTQA11jQ1AdRY09QEUGNNUxNAjTVNTQA11jQ1AdRY09QEUGNN
+      8/8D8+slQzAgX08AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='global_sales_by_genre' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAWDUlEQVR4nO3dTWwcd3rn8W9Vv7+/ssnmO0VSEiW/xbJHsAezM9nEgwyywO4iDjDY2xxz
+      3mM2ue8lt9wCBNlTgEWARU5zyMLwxOOxbNmWbOuFokiKFMWX5lu/VL9U11sOlGhRpOwixWaT
+      rOcDCBK76896Wt2/rq6qp/6tOI7jIIRHqd0uQIhukgAIT5MAnFLl9WU+v/k1LcPqdinnmiL7
+      AKfT7373MYVsmkq1wv2FLX4y6mO1nSaaiHP35me896u/5PJQvttlnnmyBTilhnpzLK1uQCDC
+      m69PMTzYD4qPC2PDDE9eoZCKdrvEc+GVtwCO46AoynHVI8SJeuUtgG3bx1GHEF0hH4GEp0kA
+      hKdJAISn+d0s5DgOtm2jquruTq8DqLLzK844VwHQGzXu3LlDNNODrjWJJoIYpsKVS5PATkCE
+      OItcBSAUTVAoDqE4FnGfSkNRific3S2DBECcVa7OAziOTbttEvA5lLY00rEADVMlm4pjWRY+
+      n+8kahXi2L3yibAXA+A4Npbl4Dg2iqLiODZ+vx9wME0Lvz+A7DqI08LVR6DD+PrzT/EnCjj1
+      dZYrJnFqJIbfpN+/xRePGnzw8/cIygZDnBLHfhhU0zRm5ubI5fK8+5NrxJNpfI6NEkzQrjyh
+      2jSPe5VCHNmxbwHe/clPWN5qksmniYSDPAnEGC5mURyLyctvkIsf+yqFOLJj2wdYW1vj1p1b
+      7gY58LP3fkY0Kh2NoruO7e34k9uf8GHlQ3cLb8DD0YeMj48f1+qFOBJphRCeJgEQniYBEJ7m
+      ah/ANnUezi5QyGdZLWvk4kEahsLIYLHT9QnRUa4CUF5dpmk7bFdqOKZNw7BRn/YBPesFOuyV
+      YZZlYZpyTkB0l6sAJHJ5ArUlAsEQzWYVxfahW+pue7TP50NVD/dpyufzPW2REKJ7XL0CA5EE
+      V6amdn4Y7O9kPUKcKNkJFp4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCe5npiLMMw8Pv9
+      WJaNT1WwHfD75eJecba5CkCzXGJmuUwmEaayXSMUC2JaClMXJ4CnE2Md4boymU9IdJurAJjt
+      Nm1dY71tkkuE0X0+QqqzpwnusC/mZ410QnSTu2a4wiAjBMnmMpQrdYqRAK0XmuEU9XCT/aiq
+      KhNqia5zFQBFUSj09gKQzwUBCHWuJiFOjBwFEp4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4m
+      ARCe5upEmGXUuT/9mGJvllK1QTYWoGEojA7JDBHibHMXgFaDtuNQazRxTJOm6ceHLRNjiTPP
+      3cxUvjCRgEMwGKZeb6Fi0ZaJscQ54OoVGIwmuHz5CgDFYm9HCxLiJMlOsPA0CYDwNAmA8DQJ
+      gPA0CYDwNAmA8DQJgPA0CYDwNFcBcBwbraZhWRbNlo5lGuhto9O1CdFxrs4EG1qJe7MVejMh
+      tFoDfySAbSlcmhz/vg/okHNcHaV/SIjj5m5qRCVMkCW2agqJYABT8fH8rIiO4xx6YqyjjBHi
+      uLnsBYrTPzBKNpuiWmsSC/vRLQVF2fkjE2OJs8rdxFiqn56ePACZdACAYOdqEuLEyFEg4WkS
+      AOFpp+qKlHa9zO2ZJUKWRrJnkOWFGUam3iGob3BnboX333+PoO9w+xpC/JBTFYBbt7+hbOg0
+      1zTGEwWKvb2EAj6qpQqVWgXTdiQA4lidqgAU+/vRV7cojMXRqxs8Km3yWiQD/jCxSEw+r4lj
+      d6oCMDQ6wdDoQfcUuXDx8glXI7zgVATgX///v/L3D//e1bLGpsG//NW/kMlkOlyV8IJTEQDN
+      0Ni6uOVq2eZ8E8uyOlyR8Ap3AXAcZmdmyOfSrJQbZKJ+GobC2PBAh8sTorNcBaBe3mC1tE0g
+      GsYxDJqWH79yfBNjyaRaoltcBcAfjtLbkyEUDFF3WgQUG/0YJ8aSSbVEt7h6FYUiMSYuXQSg
+      tyATY4nzQw6tC0+TAAhPkwAIT5MACE+TAAhPkwAIT9sXgJmZmW7UIURX7AvARx99JCEQnnHg
+      R6CPPvqIjz/+eM9tuq5j2xZavYHZ1mm22idSoBCdtO9M8K9//et9CzmWwVeff0n/6ACtWhMl
+      5Mex4eLE9xNjHWVeoGc9QK8yVohXsW8LkEwmCQaDNJvN3cneyhsl2qZJvamjqArO0/mAjstR
+      AiDEcTiwF+jerZt8d2+RD3/zP4gAmd4BfpotoKoKWkMnEvTRtr+fGEtV1UMH4tk4OHwznKqq
+      hx4jxEEODEAgYBGN5nj+Je0P7EyIlUzsDAl0vDQhOm/f26htWaSyvUQzEZn9TZx7+wLQ0sos
+      LpVwLAO55EScd/sCEE3lCPnbPJpeQI6ziPNu3z6AXttiYOwq+RVdPgKJc29fAGrrJf79m1km
+      hgdoA+EuFCXESdkXgOzIBP+lbxjbdgh1oyIhTtABO8EVvrz5OTdvfoPMviPOuwN3gjOpCIsz
+      8xIAce4deCIs6AtRGC7y7AuMjKbG/elpovEsbUUhqpo0DIWpi+MnWKoQx29fABqVDeafrIIT
+      3O0FUgMhwiE/is+Pvr1FIJchGnJkYixx5u0LQDSVp5hL82StunsewDJ0CMTJZxOgKOSTYRqm
+      TIwlzr59r6JWvUKlWqFUru9+BApG4kxOxAFIptI7f59Yie7M3v8WK5TGqKySGZikXd2gOHqB
+      1vYaM0ubXHvz6rF2sIrzYd9brwr0D40xfmHkTF0wHAmFWF1bI5fvpbq5wre379IyLFaeLLG0
+      vIwtHdTiAPte4xsLc9TaKs3qNno3Kjqi7UoF02zx6SefUm80aTY1FheWMRwFHAe5hEAcZN9H
+      oOKl11j76iuKI2NEulHREV19612uPvfztbfffvqvEV5/qxsVibNgXwAUX4A/evd6N2o5ko8/
+      +5jPlj9ztWxjs8Hf/OZvZAda7Drzr4Qn208oTZTcLVt7cuDllHdv36Ttj1MvLTIwPs6db+b5
+      +Qd/zNbjB3w984T/+qs/Pe6yxSlx5gNwHNKJBHMby2QLr7O19C2WX6XZMhm6MEmlJTsP59lZ
+      OtDTMRvbW8RjRcrrd0j2TpCOqDS0Go3KJv1jk90uT3SQbAGAN6699/RfO1/FOjF+Yfe+WBfq
+      ESfHVQBMvcH84jLFYoHSZo1cIkjdVOkv5DpdX0f90//7Jz6pfuJq2dpijX/+X//c4YrESXMV
+      ANUfxNarLCz76AmrrNYsIoqDbWe63gtkO4cba5rm7hlhw2eQfMvdOe2G1ZD+o3PIVQDarQYW
+      PgKKw0q5TioRpGH6TkUvkKocbqzf798dq6iHa42Qw6fnj6tnNBxLcuW1NztdixAnTo4CCU+T
+      AAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT3N1Jtho1XkwM0MwmMD0+4goBg1D4cql
+      iU7Xd8rZfPfVTcxQnMbGGolMlrXNLd69/jP07QWqVpyJ4d5uFyl+gKsAKIpCMttHNAiLiyv4
+      8zliPvtUTIz1Ks1wziGnijioGS6dy2L54tjVEuWtLaq1KvVmm0K+wObiljTQnXKuAmAZBnWt
+      SryQJ91TIJ8KSzMcgGMxNzNHtn+QhgHpXB4TFUtvsFxeY+FxmUuTZ2t6Ga9xFYBQPMXlSykA
+      Mpmd2xIdK+kMUXz8pz/95dMfrrxwZ55hmTr11JP+3iP6x//7jyzai66WrSxV+Lv/+Xcdrkgc
+      hQTgiAKxAGOXx1wt+0h51NlixJHJx1PhaRIA4WkSAOFpEgDhaRIA4WkSAOFp7ibGajeZX1ii
+      t1BgfbtKLhGibigM9PV0uj4hOsrdxFi+AIlYkOXSFrmwj7W6ToTT8SV53eoFOlTNzsF9RKL7
+      XAWgVd3gybpGIZvYnRireUq+JK9bvUCqqmLjMgSKTKp1Wrl6VqKZPq5l+gAYGupoPUKcKNkJ
+      Fp4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQnuZuWpR2kwePlslH/WzoDmHaNAyV
+      q5e9PjGWOOtcBcAXjJBOxPAHoLmyjL8nR8wnzXCuSTPcqeV6asRKpUKo0EOur498KkJDmuGk
+      Ge4ccPWsBMIxLl++BEA2u3ObfIP6qytvrhNL51ice0ihr5ellQ0uT47zeO4BNdPH1Usys1an
+      yU5w19iUlh6yqbVx2nXml0rMP7xLtWVS6O+nUau8dKSpN7g7PUN5Y4Xf37jJ4vwM3z2YB7vN
+      H/79d3w3M3+Cj+NskwB0UXlzg4X5WW7dXyAaVDANk0q5Sn1rnf6xyZeO8wVCKFjEk2ni4SBb
+      1RZ2S8NRg0xdHCWZzJ7gozjb5INp1yi8dv2PUXx+ro4PEwgGKRYHCIeCKKRQVN9LR7abNe5+
+      +y1bpTU0K0BvQqVihqhWqmzW2oyNJ0/wcZxtEoAuuPH5DbaqW66WVWyFP/vln+25LRRL8xcf
+      /uWBy6dS8uI/DAlAF6xurTJ57eUfcZ53+7Pbe37+h//zD2TyGVdjk6EkH/zJB4euz0skAGdM
+      OB1m6t0pV8vOfT3X4WrOPtkJFp4mARCe5rIXqMXKRoV8MszjUoV8MkjdUBksFjpdnxAd5W5i
+      rEAQFZuNcpVMAEoNg6givUCuvdAL5Dju1+vgHLmPyLZt6UH6Ee6mRtSbLC8v01vIs1xtkk4E
+      aRrSC3TUXqBnAXQ3VDlyH5GqqgeOnb3/LYvrdQayYbbbfq7/0RS///QGP33//SOt5yxz3Qv0
+      zjvXAJB5sc6+ZqNBrV4nOT5AyPYDPvI9uW6X1RWyE+xBqXSaTDrF4/lZtqoa5comiw8e8mh5
+      vdulnTg5D+BBQxcuMXRh720f/Pmfuxo7O/0dn387y7WLGYJ91xnK2vzu3/6NvkvvMjXW14Fq
+      O0sC4CF/+7//lgmXV/FFnSgf/rcP990+PNiPEcgwnLNYazkoqCTTWRSs4y73REgAPGTi8gTv
+      vP+Oq2Uf3Xp04O2GFWBiLMP07S8wAi0SgSwmPob6e3/0d64tzVPSHCJo9I1eJeIzuPtgntev
+      ujuz3QkSAPGjbNvmxo0b++9objJd3QTgm6++2L15bGyMvr79H4fu3r1HrDBCfzFOo2URS4UI
+      BA53JO64SQDEj2q325TLZd55x93W4/bt2wcGYHBwgMdbVR5OL0LSQBnMcO/b70jlByhmE8dd
+      tisSAOFKMBgkFAq5WvZl53Umr7zJiz2w//0v9u9nnCQJgOio7e1tfvvb35LNurtKLZ1Oc/36
+      9Q5X9T0JgOiodrvNxMQEly5dcrX8zZs3O1zRXocKQOnxIzbbEHJ0GqbKa5fdXdQhxKtaWZzF
+      DKTQyyuEM0UGepLcezDP5csXUQ/RWvKiQwUgEA5TX3mCr5An7relGc6tU9IM5+B+vc+PtazD
+      HeM/rrHP01stZh+VqK7N8dM/GeXJ/APu3bqNE+/hUvHol4EeKgCxeJzCwAD5ZFgmxjqDzXAK
+      7tf7/NjDBvD5sT7fyy/u/7Gxz2vpOs1WneHBEabv32Hq0gSp1DyZROSVJh071MhgJM7wQByA
+      6JFXKcThTV55g8krKjg2ytM3zF/88lf4fK+2Gys7weLU2tra4saNGwSDQVfLj46OMj6+fza9
+      mTu30f1xrFaV115/i3a9zBdf3ubaT38uARCn18bGBhcuXKBYLLpa/ssvvzwwAL39/SxvaITj
+      MWwbwrEUfdkEhu1IAMT599UXn5MZmmBh9i6240dpa0yvbNN30ZYAiPPvF7/cafV+c+r7cxGT
+      V3b+lgCIc2l6epqZmRkCgcAPLicBEOdSrVbj7bffJh6P/+ByR7okcvnxPDNzC0cqTIjT5Ehb
+      AEsJEA4c7iyqEKfRkbYA0aAPx+fu2KwQp9mRtgC5QpEc7PYCAVwcvchft/7a3S8YglQqtduX
+      MzU2xW98v3E11EyYhEKhPWPTybSrsdXXqju/4+nYNy68QTHl7hiz9rqGZVk4joOiKFy5cAUn
+      6W4rOHh5cM/YibEJsiF37cFTE1N7+mmuTlx1PVYZVfas9zBj1RF1z9jh4WHXLQfDw8O7NUci
+      EXp7e480Np1O4ziO67FDQ0O7Y3t7e4lGoz86VnEO05l1ANu2D93LI2NP1lHX6zgOjuOc+Fjb
+      tlEU5VA9U0cd+8rPxosP8MnS0m7Pod5u02o0Xtoy9mxsU6swPTPLdqW6bxnTNLCs/b/h+fXW
+      ypvMzD3ioOZOXW8fOHaztML9h/O7nZmVcvn7MbVt7ty7z8rG/i+xePHxWqbOk+USGyuP2apo
+      mD/QH/f82JWlBeYXn+y5v9FovHwwsL2+yv2ZWba2n9Vqoesm66tL1PWXN6ypqgrtOt/dm6Zc
+      q/PsLa+m1QCbtm7QPGDdiqKA3Wb6/jTlcnXfY7Mtk2qtBuw815bZptU2nxtrsrxaAkDTagfW
+      1n7J86MoCqXlxzxeXkNv63vu19v7x7w4dofB/e/uslnW9i1XKZdxnGM+DGqbOrXyJis+P5Wq
+      Rq2ySV/fIDirNA0F1dAIJXsYHth7vajZ1rEdh43SMqtr64SUNjZ+9HYLw7SIR5PMz91naHSS
+      aDLNcLFnz3ijrWPbsDD3AFMNYDXqRMIh6rZCZXOTVDxEqjDCQOH7L5aoazWaNZ2lpQVqTYtY
+      SOX2zT+QH5okhomBweOlNczKKss1uP7WlYMfs2VSWl8npmg4EYW1lXki8RzNapULFy8S8h/8
+      HqPVNJq2n4d3v6ZmhQj7VaKJJPbyYyxfEFtvEornGBn8fraFuqbRbDbY2FRYmb+PGYyg6358
+      tkai2sBRgzh6DX84TF1rkEjnuDAy+PQ/qY6mQ71WRdtao6o7mPUtoskE22WL4YEc87PTxOMp
+      qlqZ3tHX6UkEcMw2bdOmWamxXd+mulEmEouTTCSw220Ms8Effv8pPX299PZkiSR6CQd3XlaV
+      zXXKNQPFXGBtu0axkMdoanxzb5aJyXEM00KvVUgV+kmGAmiNKnqzydJ6nf/8i/fQ2zq2qnDr
+      1m16chmCwQB3HyyQz8TIpVPcefiYqYlhdNMhm4yjBKL05FLPvzLQtDbm/BwMFagbNlqlhq7V
+      iGVyPHn04HgD0KpXMQjQ0Gooqp+e3M50e8/emHOF/gM70lV/AMcyiGXyhAIqlc0Szzp3s9k8
+      lmFQHBwhmYjT05vfN97nD2CaNWxTJxgPPZ2hRmFgeIyQYxGOhtFqVXguAPFUjlC4ScswAAiH
+      QuR7+ykW+wkZTQrZLJVSCb1eIRnz7bw7KwrRSGTPuhXVR08ijKlGsG2FcCLNdrmG70e2wNme
+      ArpuUK/bRP0+nKdbuWSmBxyDtXoNp7n3nS+WzNA/Os56aY2KEScSixFu2OR6+mhpZeqGQ09f
+      PyiQSWf3Nj/7AkxenMCqrdNomrSabUZGLoBjYRo730jZ2z9MW9vG0pu0nm1QFD8Bv0JLbxOK
+      JxkajOM4DutrK/jDSQKORV9fnnimB7Aw9QaaZhGJR9EaTexWA02JEQpHMVt1QtE4wyNjJBJJ
+      gn4fjZCPtqnzpFxhYLCPWLiBP7rzPAUCAbS2TS6TIppIE3IMCj0ZMqkUimMzNjaKbRk0Wybb
+      xgbDF198k1IZm5wk6mtyf+4RgUicWDRCQ9OIhMOYpPkPwSDkHVd9qJkAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
